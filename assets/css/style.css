@@ -13,12 +13,17 @@
   --zm-accent: #4ac900;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--zm-white);
+}
+
 i {
     color: var(--zm-white);
 }
 
 .d-flex {
-    display: flex;
+    display: flex;   
 }
 
 /* Debug Region */
@@ -27,7 +32,7 @@ i {
 }
 
 .debug .container {
-    background-color: antiquewhite;
+    background-color: cornflowerblue;
     min-height: 100px;
 }
 
@@ -56,4 +61,16 @@ i {
     width: 100%;
     max-width: 1170px;
     margin: auto;
+}addspeaker
+
+.speaker{
+    position: absolute;
+    text-align: end;
+    top: 10px;
+    right: 10px;   
+    background-color: var(--zm-dark);
+    width: 1.5rem;
+    aspect-ratio: 1rem;
+    line-height: 1.5rem;
+    padding: 0.25rem;
 }
