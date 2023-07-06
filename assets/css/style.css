@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --zm-black: #000000; 
+  --zm-darker: #232322;
+  --zm-dark: #4a4a4a;
+  --zm-white: white;
+  --zm-end: #f80a11;
+  --zm-accent: #4ac900;
+}
+
+.debug .header {
+    height: 100px;
+}
+
+#pg_header {
+    background-color: var(--zm-black);
+}
+
+.debug #main {
+    height: 1100px;
+    background-color: var(--zm-dark);
+}
+
+#pg_footer {
+    height: 100px;
+}
+
+.debug #pg_footer {
+    background-color: var(--zm-darker);
+}
