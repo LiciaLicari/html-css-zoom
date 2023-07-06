@@ -61,15 +61,16 @@ i {
     width: 100%;
     max-width: 1170px;
     margin: auto;
-}addspeaker
+    justify-content: end;
+}
 
 .speaker{
+    display: block;
     position: absolute;
     text-align: end;
     top: 10px;
     right: 10px;   
     background-color: var(--zm-dark);
-    width: 1.5rem;
     aspect-ratio: 1rem;
     line-height: 1.5rem;
     padding: 0.25rem;
