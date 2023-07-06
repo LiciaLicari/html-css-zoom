@@ -13,12 +13,22 @@
   --zm-accent: #4ac900;
 }
 
+i {
+    color: var(--zm-white);
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* Debug Region */
 .debug .header {
     height: 100px;
 }
 
-#pg_header {
-    background-color: var(--zm-black);
+.debug .container {
+    background-color: antiquewhite;
+    min-height: 100px;
 }
 
 .debug #main {
@@ -26,10 +36,24 @@
     background-color: var(--zm-dark);
 }
 
+.debug #pg_footer {
+    background-color: var(--zm-darker);
+}
+
+/* /Debug Region */
+
+/* Utility */
+
+#pg_header {
+    background-color: var(--zm-black);
+}
+
 #pg_footer {
     height: 100px;
 }
 
-.debug #pg_footer {
-    background-color: var(--zm-darker);
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
 }
