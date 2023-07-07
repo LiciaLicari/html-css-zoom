@@ -37,6 +37,12 @@ body{
     justify-content: end;
 }
 
+.pg_header .container {
+    position: relative;
+    right: .25rem;
+    top: .25rem;
+}
+
 #pg_main .container {
     height: calc(100vh - 120px);
     overflow-y: auto;
@@ -70,10 +76,7 @@ body{
     padding: 0.25rem;
 }
 
-.speaker .i {
-    color: var(--zm-white);
-    gap: 32px;
-}
+
 
 .d-flex {
     display: flex;   
@@ -136,11 +139,13 @@ body{
 .speaker{
     display: block;
     position: absolute;
+    border-radius: 0.05rem;
+    line-height: 1.5rem;
+    padding: 0.25rem;
     top: 10px;
     right: 10px;   
     background-color: var(--zm-dark);
-    border-radius: 0.5px;
-    line-height: 1.5rem;
-    padding: 0.25rem;
+    
     
 }
+
