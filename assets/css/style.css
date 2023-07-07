@@ -18,11 +18,56 @@ body{
     color: var(--zm-white);
 }
 
+.bg-black {
+    background-color: var(--zm-black);
+}
+
+.bg-dark {
+    background-color: var(--zm-darker);
+}
+
+.bg-light-dark {
+    background-color: var(--zm-dark);
+}
+
 .header {
     width: 100%;
     height: 100px;
     margin: auto;
     justify-content: end;
+}
+
+#pg_main .container {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: 3rem;
+}
+
+#pg_main .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+#pg_main [class^="col-"] {
+    padding: 0.5rem;
+}
+
+#pg_main .card {
+    height: 150px;
+    background-image: url(https://picsum.photos/200/300);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#pg_main .username {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(45, 45, 45, 0.7);
+    padding: 0.25rem;
 }
 
 i {
@@ -33,16 +78,45 @@ i {
     display: flex;   
 }
 
+.col-2 {
+    width: calc(100% / 14 * 2);
+}
+
+#pg_footer {
+    background-color: var(--zm-darker);
+    height: 100px;
+}
+
 /* Debug Region */
 
 .debug .container {
     min-height: 100px;
 }
 
-.debug #main {
+.debug #pg_main {
     height: 1100px;
     background-color: var(--zm-dark);
 }
+
+.debug #site_main .container {
+    background-color: palevioletred;
+}
+
+.debug [class^="col-"] {
+    background-color: darkslateblue;
+    padding: 1rem;
+}
+
+.debug .card {
+    background-color: bisque;
+    min-height: 48px;
+}
+
+.debug .card .main_tools{
+    height: 100%;
+    width: 50px;
+}
+
 
 .debug #pg_footer {
     background-color: var(--zm-darker);
@@ -54,10 +128,6 @@ i {
 
 #pg_header {
     background-color: var(--zm-black);
-}
-
-#pg_footer {
-    height: 100px;
 }
 
 
